@@ -5,10 +5,10 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        drawFigure(readValue("s"));
+        drawFigure(readAndCheckValue("s"));
     }
 
-    private static int readValue(String name) {
+    private static int readAndCheckValue(String name) {
         Scanner scanner = new Scanner(System.in);
         System.out.printf("Enter %s:", name);
         int s = scanner.nextInt();
